@@ -13,9 +13,9 @@ jobs:
 
       - name: Unpack project
         run: |
-          test -f olovcha_project.zip
+          test -f drako_project.zip
           mkdir -p project
-          unzip -oq olovcha_project.zip -d project
+          unzip -oq drako_project.zip -d project
 
       - uses: actions/setup-java@v4
         with:
@@ -32,5 +32,5 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: Olovcha-APK
+          name: Drako-APK
           path: project/app/build/outputs/apk/debug/app-debug.apk
